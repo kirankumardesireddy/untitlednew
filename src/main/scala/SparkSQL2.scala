@@ -23,8 +23,7 @@ object SparkSQL2 extends App {
     .config("spark.some.config.option", "some-value")
     .getOrCreate()
 
-  //hive sqlContext
- // val sqlContext= new SQLContext(sc)
+
 
   // spark sql context
   val sqlContext= new org.apache.spark.sql.SQLContext(sc)
